@@ -1,0 +1,176 @@
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: "Playfair Display";
+}
+
+.about {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  /* Add top padding for navbar */
+  /* padding-top: 68px; */
+  box-sizing: border-box;
+  background: transparent;
+
+}
+
+.aboutContainer {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.portraitsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+}
+
+.portrait {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.description {
+  max-width: 40vw;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #FFF;
+  margin-top: 1rem;
+}
+
+.header {
+  position: sticky;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding: 2rem;
+  max-width: 1100px;
+  opacity: 0;
+  animation: fadeInText 1.2s ease 0.2s forwards;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 928px) {
+  .header {
+    font-size: 2.5rem;
+    padding: 1rem;
+    padding-bottom: 0rem;
+
+  }
+
+  .text {
+    font-size: 1.3rem;
+    max-width: 600px;
+  }
+
+  .portraitsContainer {
+    flex-direction: column;
+
+  }
+
+  .portrait {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+
+
+}
+
+@media (max-width: 736px) {
+  .header {
+    font-size: 2.7rem;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    width: 500px;
+  }
+
+  .portraitsContainer {
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    margin-right: 0rem;
+
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .description {
+    max-width: 460px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFF;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    font-size: 1.9rem;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    max-width: 360px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFF;
+    margin-top: 1rem;
+  }
+
+  .portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    max-width: 350px;
+  }
+}

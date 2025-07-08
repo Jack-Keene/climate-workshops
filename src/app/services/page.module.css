@@ -1,0 +1,214 @@
+.section {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 68px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    max-width: 1100px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 8px;
+}
+
+.cardHeaders {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+}
+
+.cardHeaders .title {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+
+}
+
+.topics {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+
+.format {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.format li {
+    list-style: none;
+    padding: 0.7rem 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 1.2rem 0.5rem 0.5rem 0;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border: 1.2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+    transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+    cursor: default;
+    width: 70%;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    justify-self: center;
+    padding: 1rem;
+    width: 230px;
+    height: 150px;
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+.subheader {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+
+
+@media (max-width: 1150px) {
+    .card {
+        max-width: 1000px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .card {
+        max-width: 900px;
+    }
+
+    .cardHeaders .title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #fff;
+
+    }
+
+    .topic {
+        padding: 0.5rem;
+        width: 210px;
+        height: 120px;
+        margin: 0.4rem;
+    }
+
+    .format li {
+        padding: 0.4rem 1rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 924px) {
+    .card {
+        background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(6px);
+
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+
+    .cardHeaders .title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #fff;
+
+    }
+
+    .topic {
+        padding: 0.5rem;
+        width: 210px;
+        height: 120px;
+        margin: 0.4rem;
+    }
+
+    .format li {
+        padding: 0.6rem 1rem;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 736px) {
+    .header {
+        font-size: 2.7rem;
+    }
+
+    .text {
+        font-size: 1.3rem;
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .topics {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .topic {
+        padding: 1rem;
+        width: 230px;
+        height: auto;
+        min-height: 130px;
+        border-radius: 6px;
+        margin: 0rem;
+        /* border: #ffffff48 1px solid */
+    }
+
+
+}
