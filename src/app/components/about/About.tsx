@@ -12,10 +12,10 @@ export default function About() {
             <div className={styles.aboutContainer}>
                 <div className={styles.portraitsContainer}>
                     <div className={styles.portraitWrapper}>
-                        <Image className={styles.portrait} src="/p1.png" alt="Portrait 1" />
+                        <Image className={styles.portrait} src="/p1.png" alt="Portrait 1" width={200} height={200} />
                     </div>
                     <div className={styles.portraitWrapper}>
-                        <Image className={styles.portrait} src="/p2.png" alt="Portrait 2" />
+                        <Image className={styles.portrait} src="/p2.png" alt="Portrait 2" width={200} height={200} />
                     </div>
                 </div>
                 <div className={styles.description}>
