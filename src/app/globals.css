@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +17,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
@@ -31,7 +32,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -46,9 +52,9 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    repeating-linear-gradient(to right, rgba(180,180,190,0.13) 0, rgba(180,180,190,0.13) 1px, transparent 1px, transparent 120px),
-    repeating-linear-gradient(to bottom, rgba(180,180,190,0.13) 0, rgba(180,180,190,0.13) 1px, transparent 1px, transparent 120px),
-    rgba(0,0,0,0.35);
+    repeating-linear-gradient(to right, rgba(180, 180, 190, 0.13) 0, rgba(180, 180, 190, 0.13) 1px, transparent 1px, transparent 120px),
+    repeating-linear-gradient(to bottom, rgba(180, 180, 190, 0.13) 0, rgba(180, 180, 190, 0.13) 1px, transparent 1px, transparent 120px),
+    rgba(0, 0, 0, 0.35);
 }
 
 body::after {
@@ -60,11 +66,11 @@ body::after {
   height: 100vh;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(54,74,89,0.2) 0%, rgba(83,104,121,0.9) 35%,rgba(83,104,121,0.9) 65%, rgba(54,74,89,0.2) 100%);
+  background: linear-gradient(90deg, rgba(54, 74, 89, 0.2) 0%, rgba(83, 104, 121, 0.9) 35%, rgba(83, 104, 121, 0.9) 65%, rgba(54, 74, 89, 0.2) 100%);
   transition: background 0.3s;
 }
 
-body > * {
+body>* {
   position: relative;
   z-index: 2;
 }
