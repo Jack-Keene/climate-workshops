@@ -1,11 +1,11 @@
 "use client"
 import styles from "./page.module.css";
-import ThermostatIcon from '@mui/icons-material/Thermostat';
-import Co2Icon from '@mui/icons-material/Co2';
-import GroupsIcon from '@mui/icons-material/Groups';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+// import ThermostatIcon from '@mui/icons-material/Thermostat';
+// import Co2Icon from '@mui/icons-material/Co2';
+// import GroupsIcon from '@mui/icons-material/Groups';
+// import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import Contact from ".././components/contact/Contact";
-import { scrollToSection } from "../utils"
+// import { scrollToSection } from "../utils"
 
 export default function Services() {
     return (
